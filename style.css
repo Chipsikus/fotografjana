@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'inter', sans-serif;
+}
+
+section {
+    background: no-repeat center cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+#main {
+    background-image: url(img/bgMAIN.png);
+}
+
+#about {
+    background-image: url(img/bgABOUT.png);
+}
+
+#skills {
+    background-image: url(img/bgSKILLS.png);
+}
+
+#works {
+    background-image: url(img/bgWORKS.png);
+}
+
+#comments {
+    background-image: url(img/bgCOMMENTS.png);
+}
+
+#blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+.maskot {
+    position: absolute;
+    top: -118px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-block {
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-content {
+    background-image: url(img/form1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 849px;
+    height: 223px;
+    position: relative;
+}
+
+
+.main-title {
+    padding-top: 67px;
+    color: #2B2D35;
+    font-size: 80px;
+}
+
+.main-subtitle {
+    color: #2B2D35;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+}
+
+#button {
+    width: 200px;
+    height: 60px;
+    border-radius: 100px;
+    border: 2px solid #000;
+    background: #BBFF2C;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 0 #000000;
+    margin-top: 20px;
+    transition-duration: 0.3s;
+}
+
+#button a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#button:hover {
+    background-color: #78ae04;
+}
+
+.napis {
+    padding-left: 30px;
+}
+
+.moving-planet {
+    background: url(img/moving-planet.png) no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    animation-name: move-planet;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move-planet {
+    from {
+        transform: translateY(0px)
+    }
+
+    to {
+        transform: translateY(70px)
+    }
+}
+
+.title {
+    padding-top: 100px;
+    text-align: center;
+    color: #FFF;
+    font-size: 80px;
+    text-shadow: 5px 5px 0 #000000;
+}
+
+.about-content {
+    width: 35%;
+    height: 270px;
+    background: #792AFF;
+    padding-left: 40px;
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+}
+
+.about-title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 463px;
+    margin-bottom: 20px;
+    font-family: 'Comfortaa';
+}
