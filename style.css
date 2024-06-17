@@ -139,11 +139,12 @@ section {
 }
 
 .about-content {
-    width: 35%;
-    height: 270px;
+    /* width: 35%;
+    height: 270px; */
+    padding-block: 40px;
+    /* padding-inline создаёт падинг в право и лево */
     background: #792AFF;
     padding-left: 40px;
-    padding-top: 40px;
     position: relative;
     display: flex;
 }
@@ -155,4 +156,142 @@ section {
     max-width: 463px;
     margin-bottom: 20px;
     font-family: 'Comfortaa';
+}
+
+.skills-card {
+    background-image: url(img/form3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin: 20px;
+    padding-left: 10px;
+}
+
+.skills-card p {
+    color: #000;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+    font-family: 'Comfortaa';
+}
+
+.moving-planet2 {
+    background: url(img/moving-planet2.png) no-repeat;
+    width: 180px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 50px;
+    left: 1px;
+    animation-name: move-planet;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#works-title {
+    position: static;
+    /* top: -300px; */
+    padding-bottom: 100px;
+}
+
+#imgs {
+    display: flex;
+    gap: 20px;
+    /* text-align: center; */
+}
+
+#umg {
+    margin: 0 20px;
+    width: 28%;
+    box-shadow:
+        8px 8px 0 #000000;
+}
+
+#comments-title {
+    padding-bottom: 100px;
+}
+
+.comments-block {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    gap: 6px;
+}
+
+.comment-card {
+    background-image: url(img/card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.comment-card h3 {
+    font-size: 18px;
+    font-family: 'Comfortaa';
+    padding: 10px;
+}
+
+.comment-card p {
+    font-size: 14px;
+    font-family: 'Comfortaa';
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.comment {
+    background-image: url(img/comment.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    width: 327px;
+    height: 161px;
+    padding-inline: 26px;
+    padding-block: 6px;
+}
+
+.comment p {
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    max-width: 250px;
+    display: flex;
+    padding-block: 6px;
+    padding-inline: 26px;
+}
+
+/* LOL */
+footer {
+    /* я тут  */
+    background-color: #200153;
+    height: 112px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.footer-info p{
+    font-family: 'Comfortaa';
+    padding-bottom: 4px;
+}
+.footer-year p{
+    font-family: 'Comfortaa';
+    position: absolute;
+    right: 50%;  
+    bottom: none;
+}
+.footer-links{
+    margin-right: 16px;
 }
