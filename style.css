@@ -282,16 +282,25 @@ footer {
     align-items: center;
     color: white;
 }
-.footer-info p{
+
+.footer-info p {
     font-family: 'Comfortaa';
     padding-bottom: 4px;
 }
-.footer-year p{
+
+.footer-year p {
     font-family: 'Comfortaa';
     position: absolute;
-    right: 50%;  
+    right: 50%;
     bottom: none;
 }
-.footer-links{
+
+.footer-links {
     margin-right: 16px;
+    flex-direction: ;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
 }
