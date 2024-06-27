@@ -1,0 +1,17 @@
+@media (width <=520px) {
+    body {
+        background-color: purple;
+    }
+}
+
+@media (width >=521px){
+    body{
+        background-color: green ;
+    }
+}
+
+@media (width >=961px){
+body{
+    background-color: black;
+}
+}
