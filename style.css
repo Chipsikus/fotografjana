@@ -41,7 +41,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -313,8 +313,10 @@ footer {
 }
 
 header {
-    display: sticky;
+    position: sticky;
     top: 0;
+    z-index: 2;
+    background-color: #200153;
 
     .header-content {
         display: flex;
@@ -360,6 +362,51 @@ nav {
 
 .active {
     background-color: #BBFF2C !important;
+}
+
+.mobile-button {
+    /* FIRE IN THE HOLE!!! */
+    display: none;
+    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    background-color: #200153;
+    min-height: 100vh;
+}
+
+.mobile-nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav-links .nav-link {
+    margin-bottom: 30px;
+    width: 210px;
+    height: 50px;
+}
+.off-scroll{
+    overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+    .mobile-button {
+        display: block;
+    }
 }
 
 @media (width <=1000px) {
@@ -455,6 +502,7 @@ nav {
     }
 
     .comments-block {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
@@ -463,12 +511,17 @@ nav {
     }
 
     .comment {
-        background-image:
-            url(img/comment-mobile.png);
+        border: 2px solid black;
+        background: white;
+        border-radius: 8px;
     }
 
     .comment p {
         font-size: 15px;
         max-width: 290px;
+    }
+
+    #comments {
+        padding-bottom: 20px;
     }
 }
