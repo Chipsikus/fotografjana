@@ -205,8 +205,14 @@ section {
 #imgs {
     display: flex;
     gap: 20px;
-    /* text-align: center; */
+    flex-direction: column;
+    align-items: center;
+/* text-align: center; */
+    @media (width >= 1024px){
+        flex-direction: row;
+    }
 }
+
 
 #umg {
     margin: 0 20px;
@@ -332,7 +338,7 @@ nav {
         display: flex;
         justify-content: center;
         flex-grow: 1;
-        padding-right: 150px;
+        /* padding-right: 150px; */
 
         .nav-link {
             width: 112px;
@@ -366,11 +372,14 @@ nav {
 
 .mobile-button {
     /* FIRE IN THE HOLE!!! */
-    display: none;
     padding-top: 10px;
     width: 40px;
     position: absolute;
     right: 20px;
+    @media (width >= 1024px){
+        display: none;
+        
+    }
 }
 
 .hide {
@@ -399,19 +408,24 @@ nav {
     width: 210px;
     height: 50px;
 }
-.off-scroll{
+
+.off-scroll {
     overflow: hidden;
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
     .mobile-button {
         display: block;
     }
-}
+} */
 
-@media (width <=1000px) {
+@media (width <=1024px) {
     nav {
         display: none;
+    }
+
+    #umg{
+        width: 258px;
     }
 
     .logo {
@@ -491,15 +505,21 @@ nav {
         bottom: 100px;
     }
 
-    .works-block {
-        flex-direction: column;
-        padding: 20px 0;
-    }
+    .works {
+        .works-block {
+            flex-direction: column;
+            padding: 20px 0;
+        }
 
-    .works-block img {
-        margin: 20px 0;
-        width: 80%;
+        .works-block img {
+            margin: 20px 0;
+            width: 80%;
+        }
     }
+    /* #imgs{
+        display: flex;
+        flex-direction: column;
+    } */
 
     .comments-block {
         display: flex;
@@ -523,5 +543,23 @@ nav {
 
     #comments {
         padding-bottom: 20px;
+    }
+    .mobile-link{
+        padding: 24px 40px;
+        border-radius: 100px;
+        border: 2px solid #000;
+        background: #fefffd;
+        display: grid;
+        /* justify-content: center; */
+        justify-items: center;
+        /* text-align: center; */
+        align-items: center;
+        /* text-align: center; */
+        box-shadow: 5px 5px 0 #000000;
+        margin-top: 20px;
+        transition-duration: 0.3s;
+        text-decoration: none;
+        font-size: 30px;
+        color: #000;
     }
 }
