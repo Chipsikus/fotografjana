@@ -413,6 +413,15 @@ nav {
     overflow: hidden;
 }
 
+.about-img{
+    width: 336px;
+    height: 186px;
+
+    @media (width <=1024px){
+        height: auto;
+    }
+}
+
 /* @media (max-width: 1000px) {
     .mobile-button {
         display: block;
